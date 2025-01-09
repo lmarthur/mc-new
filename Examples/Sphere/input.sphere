@@ -1,0 +1,23 @@
+      1       Number of blocks
+# block 1
+  1           Block number
+  sphere      Shape
+  full        Position
+  0, 0        Connected blocks
+  1.d0        Nose radius [m] 
+# Reference length and area
+   1.d0       Reference length [m]
+   3.14159265d0 Reference area [m2]
+# Reference point to calculate moments
+   0.d0 0.0d0  0.0d0    Center of gravity, [m]
+# Sample points on each block per one trial
+ 10000        No. of sample points for block 1 / trial
+# Number of trials and interval for the outpuits
+  1000       Number of trials
+    10       Output interval
+# Angle of attack
+   90.0d0      Angle-of-attack, pitch [deg]
+   0.d0       Angle-of-attack, yaw [deg]
+# Freestream Mach number and specific heat ratio 
+  10.0d0      Mach number
+   1.4d0      Specific heat ratio

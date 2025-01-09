@@ -1,0 +1,24 @@
+      1       Number of blocks
+# block 1
+  1           Block number
+  cone        Shape
+  fore        Position
+  0, 0        Connected blocks
+ 0.277d0       Cone base radius [m]
+ 5.25d0       Cone half-angle [deg]
+# Reference length and area
+   2.75d0       Reference length [m]
+   0.24d0 Reference area [m2]
+# Reference point to calculate moments
+  2.06d0 0.d0  0.d0    Center of gravity, [m]
+# Sample points on each block per one trial
+ 10000        No. of sample points for block 1 / trial
+# Number of trial and intervals for outputs
+  1000       Number of trials
+    10       Output interval
+# Angle of attack
+   0.d0      Angle-of-attack, pitch [deg]
+   0.d0       Angle-of-attack, yaw [deg]
+# Freestream Mach number and specific heat ratio 
+  14.0d0      Mach number
+   1.4d0      Specific heat ratio

@@ -1,0 +1,12 @@
+set view 240.0,30.0,1.0,1.0
+set size ratio -1
+unset border
+set ticslevel 0
+#
+set cbrange[0:0.05]
+set cbtics 0.01 font "Helvetica, 18"
+set palette
+#
+set cblabel "Cp" offset -3.0,11 font "Helvetica, 20" rotate by 0
+splot "visible_points.dat" using 1:2:3:4 w points pt 7 ps 0.2 lc palette notitle, "hidden_points.dat" using 1:2:3:4 w points pt 7 ps 0.2 lc palette notitle,
+#

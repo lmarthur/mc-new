@@ -1,0 +1,36 @@
+
+
+*******************************************************************************
+Wed Jan 31 16:44:45 2024
+
+
+FIT:    data read from "all_aero_coefs.dat" using (3.1415/180*$5):15
+        format = x:z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = m*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             b            
+   0 4.1936032091e-01   0.00e+00  7.16e-02   -1.000000e+00  -1.000000e-02
+   4 7.7114397557e-05  -1.85e-06  7.16e-06   -9.360369e-02   5.595531e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 7.71144e-05
+rel. change during last iteration : -1.84681e-11
+
+degrees of freedom    (FIT_NDF)                        : 48
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0012675
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.60655e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = -0.0936037       +/- 0.001779     (1.901%)
+b               = 5.59553e-05      +/- 0.0001794    (320.5%)
+
+correlation matrix of the fit parameters:
+                m      b      
+m               1.000 
+b               0.035  1.000 

@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>MC-New_v2022.1_UserManual</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+  body {
+    padding: 2cm; 
+  }
+}
+</style>
+
+<style type="text/css">
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+</style>
+
+<style type="text/css">
+pre.line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+pre.line-numbers > code {
+	position: relative;
+}
+
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+	.line-numbers-rows > span {
+		pointer-events: none;
+		display: block;
+		counter-increment: linenumber;
+	}
+
+		.line-numbers-rows > span:before {
+			content: counter(linenumber);
+			color: #999;
+			display: block;
+			padding-right: 0.8em;
+			text-align: right;
+		}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">MC-New: A Program to Calculate Newtonian Aerodynamic Coefficients Based on Monte-Carlo Integration</h1>
+
+<h3 id="toc_1">Manual of MCNEW v2022.1</h3>
+
+<h3 id="toc_2">Michiko Ahn Furudate, Chungnam National University, Korea</h3>
+
+<h2 id="toc_3"><a name="contents"></a>Contents</h2>
+
+<ol>
+<li>Usage <a href="#Useage">Go to the article</a>
+
+<ul>
+<li><a href="#1-1">1-1</a>. Compile the code</li>
+<li><a href="#1-2">1-2</a>. Execute the program</li>
+</ul></li>
+<li>Prepare the input file <a href="#InputFile">Go to the article</a>
+
+<ul>
+<li><a href="#2-1">2-1</a>. Structure of input file</li>
+<li><a href="#2-2">2-2</a>. Geometry parameters</li>
+<li><a href="#2-3">2-3</a>. Computational parameters</li>
+<li><a href="#2-4">2-4</a>. Freestream conditions</li>
+</ul></li>
+<li>Outputs <a href="#Outputs">Go to the article</a>
+
+<ul>
+<li><a href="#3-1">3-1</a>. Typical outputs on the console</li>
+<li><a href="#3-2">3-2</a>. Output files</li>
+<li><a href="#3-3">3-3</a>. Visualize the sample points</li>
+</ul></li>
+<li>Example inputs <a href="#Examples">Go to the article</a>
+
+<ul>
+<li><a href="#ex1">Example 1</a>: Sphere</li>
+<li><a href="#ex2">Example 2</a>: Cone </li>
+<li><a href="#ex3">Example 3</a>: Biconical object</li>
+<li><a href="#ex4">Example 4</a>: Apollo capsule </li>
+</ul></li>
+</ol>
+
+<h2 id="toc_4"><a name="Usage"></a>1. Usage</h2>
+
+<h3 id="toc_5"><a name="1-1"></a>1-1. Compile the code</h3>
+
+<p>The source code of MC-New is in the file <q>MC-New_v2022.1.f</q>.</p>
+
+<p>To compile the code, you need to have a fortran compiler installed in your computer. The code can be compiled by Intel FORTRAN with the command</p>
+
+<div><pre class="line-numbers"><code class="language-none"> ifort MCNEW_v2022.1.f -o MCNEW.exe</code></pre></div>
+
+<p>or by gfortran </p>
+
+<div><pre class="line-numbers"><code class="language-none"> gfortran MCNEW_v2022.1.f -o MCNEW.exe</code></pre></div>
+
+<p>After compiling, an execution file <q>MCNEW.exe</q> will be generated. </p>
+
+<h3 id="toc_6"><a name="1-2"></a>1-2. Execute the program</h3>
+
+<p>To execute the program, you need to prepare an input file explained in <a href="#InputFile">the next section</a>.
+When the execution and the input file <q>input</q> is in the same directory, the command</p>
+
+<div><pre class="line-numbers"><code class="language-none"> MCNEW.exe &lt; input</code></pre></div>
+
+<p>execute the program.</p>
+
+<p><a href="#contents">Back to Contents</a></p>
+
+<h2 id="toc_7"><a name="InputFile"></a> 2. Prepare the Input file</h2>
+
+<h3 id="toc_8"><a name="2-1"></a>2-1. Structure of input file</h3>
+
+<p>An input file of MC-New consists of three blocks; geometry parameters, computational parameters, and free stream conditions, as shown below. The lines starting with <q>#</q> can not be removed.</p>
+
+<p><strong>Example of input file:</strong> The input file to calculate Newtonian aerodynamics for a sphere-cone with the nose radius of 1 [m], the base radius of 1 [m], and the half-angle of 45 [deg].</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center"><img src="././inputfilestructure.png" width="90%"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">Fig.2-1 Structure of input file of the calculation for a sphere-cone in fig. 2-2</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center"><img src="./spherecone.png" width="70%"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center">Fig.2-2 An example of sphere-cone geometry</td>
+</tr>
+</tbody>
+</table>
+
+<p>The line-by-line explanations are given in the following subsections.</p>
+
+<div><pre class="line-numbers"><code class="language-none">      3       Number of blocks
+# block 1
+  1           Block number
+  sphere      Shape
+  nose        Position
+  0, 2        Connected blocks
+  0.5d0        Nose radius [m]
+# block 2
+  2           Block number
+  cone        Shape
+  fore        Position
+  1, 3        Connected blocks
+  1.0d0       Base radius [m]
+ 45.0d0       Half-angle [deg]
+# block 3
+  3           Block number
+  circle      Shape
+  base        Position
+  2, 0        Connected blocks
+  1.d0        Radius [m]
+# Reference length and area
+   1.d0       Reference length [m]
+   3.14159265d0 Reference area [m2]
+# Reference point to calculate moments
+  0.0d0  0.0d0  0.0d0    Center of gravity, [m]
+# Sample points on each block per one trial
+  5000        No. of sample points for block 1 / trial
+  5000        No. of sample points for block 2 / trial
+  1000        No. of sample points for block 3 / trial
+# Number of trials and interval for the outputs
+  1000       Number of trials
+    10       Output interval
+# Angle of attack
+   0.0d0      Angle-of-attack, pitch [deg]
+   0.d0       Angle-of-attack, yaw [deg]
+# Freestream Mach number and specific heat ratio
+  10.0d0      Mach number
+   1.4d0      Specific heat ratio</code></pre></div>
+
+<h3 id="toc_9"><a name="2-2"></a>2-2. Geometry parameters</h3>
+
+<p>MC-New can treat only axisymmetric geometries; sphere, cone, sphere-cone, circle, or shoulder(torus). The symmetric axis coincides with the x-axis. </p>
+
+<ul>
+<li><p><strong>Number of blocks</strong></p>
+
+<ul>
+<li>Line 1:  <strong>nblk</strong> (integer): Number of blocks consisting of the whole geometry</li>
+</ul></li>
+<li><p><strong>Definition of geometries in each block</strong></p>
+
+<ul>
+<li>Line 2:  <q># block 1</q> : This line is read as a dummy character</li>
+<li>Line 3: <strong>iblk</strong> (integer): Blocks number</li>
+<li>Line 4: <strong>gtype(iblk)</strong> (charactor(8)): Shape (sphere / cone / sphere-cone / circle / shoulder)</li>
+<li>Line 5: <strong>ptype(iblk)</strong> (charactor(8)): Position</li>
+<li>Line 6: <strong>icnctm(iblk), icnctp(iblk)</strong> (integer): Block numbers of connected neighbor blocks. icnctm is the block number placed on the negative \(x\) side. icnctp is the block number placed on the positive \(x\) side. If no blocks are connected, give 0.</li>
+<li>Line 7: <strong>Geometry parameter lists</strong> : The lists are depends on the choices of the shape and position. See Table 1. Use one line for one parameter.</li>
+</ul></li>
+<li><p><strong>Reference length, area, and point</strong></p>
+
+<ul>
+<li>Line 21: <q># Reference...</q> : This line is read as a dummy character</li>
+<li>Line 22: <strong>len_ref</strong> (real(8)): Reference length in meters. Usually taken as the total length of the whole geometry along the symmetry axis. This reference length is used only in the calculation of moment coefficients.</li>
+<li>Line 23: <strong>area_ref</strong> (real(8)): Reference area in square meters. Usually taken as the area projected on the \(yz\) plane.</li>
+<li>Line 24: <q># Reference...</q> : This line is read as a dummy character</li>
+<li><p>Line 25: <strong>cg(1),cg(2),cg(3)</strong> (real(8)): \(xyz\)-coordinates of the reference center point of moment. Usually taken as the center of gravity. This reference point is used only in the calculation of moment coefficients.</p>
+
+<p><strong>Table 1 Keywords of shape and position types and geometry parameters to be listed</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Shape type <br> keyword</th>
+<th>Position type  <br> keyword</th>
+<th>Parameters</th>
+<th style="text-align: center"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>sphere</td>
+<td>nose</td>
+<td>Radius, \(R_N\) [m]</td>
+<td style="text-align: center"><img src="./sphere_nose.png" width="200"></td>
+</tr>
+<tr>
+<td></td>
+<td>tail</td>
+<td>Radius, \(R_N\) [m]</td>
+<td style="text-align: center"><img src="./sphere_tail.png" width="200"></td>
+</tr>
+<tr>
+<td></td>
+<td>full</td>
+<td>Radius, \(R_N\) [m]</td>
+<td style="text-align: center"><img src="./sphere_full.png" width="200"></td>
+</tr>
+<tr>
+<td>cone</td>
+<td>fore</td>
+<td>Base radius, \(R_b\) [m] <br> Half angle, \(\theta_h\) [deg]</td>
+<td style="text-align: center"><img src="./cone_fore.png" width="150"></td>
+</tr>
+<tr>
+<td></td>
+<td>rear</td>
+<td>Base radius, \(R_b\) [m] <br> Half angle, \(\theta_h\) [deg]</td>
+<td style="text-align: center"><img src="./cone_rear.png" width="150"></td>
+</tr>
+<tr>
+<td>shoulder</td>
+<td>cone-cone</td>
+<td>Shoulder arc radius, \(R_{sh}\) [m]  <br>  Shoulder base radius, \(R_{b}\)  [m] <br> or <br>   Shoulder arc radius, \(R_{sh}\) [m]  <br>  Dummy radius, \(R_{b} &lt; 0\)  [m]<br>  (Auto-calculation of \(R_{b}\))</td>
+<td style="text-align: center"><img src="./shoulder_cone-cone2.png" width="180"> <br> <img src="./shoulder_cone-cone1.png" width="180"></td>
+</tr>
+<tr>
+<td></td>
+<td>cone-sph</td>
+<td>Shoulder arc radius, \(R_{sh}\) [m]  <br>  Bottom base radius, \(R_{b}\) [m]</td>
+<td style="text-align: center"><img src="./shoulder_cone-sph.png" width="180"></td>
+</tr>
+<tr>
+<td></td>
+<td>sph-cone</td>
+<td>Shoulder arc radius, \(R_{sh}\) [m]  <br>  Top base radius, \(R_{b}\) [m]</td>
+<td style="text-align: center"><img src="./shoulder_sph-cone.png" width="180"></td>
+</tr>
+<tr>
+<td></td>
+<td>sph-sph</td>
+<td>Shoulder arc radius, \(R_{sh}\) [m]  <br>  Top base radius, \(R_{b1}\) [m] <br>  Bottom base radius, \(R_{b2}\) [m]</td>
+<td style="text-align: center"><img src="./shoulder_sph-sph.png" width="250"></td>
+</tr>
+<tr>
+<td>cylinder</td>
+<td>horizon</td>
+<td>Base radius, \(R_b\) [m] <br> Height, \(l\) [m]</td>
+<td style="text-align: center"><img src="./cylinder_hori.png" width="150"></td>
+</tr>
+<tr>
+<td></td>
+<td>vertical</td>
+<td>Base radius, \(R_b\) [m] <br> Height, \(l\) [m]</td>
+<td style="text-align: center"><img src="./cylinder_ver.png" width="120"></td>
+</tr>
+<tr>
+<td>circle</td>
+<td>top</td>
+<td>Base radius, \(R_b\) [m]</td>
+<td style="text-align: center"><img src="./circle_top.png" width="120"></td>
+</tr>
+<tr>
+<td></td>
+<td>bottom</td>
+<td>Base radius, \(R_b\) [m]</td>
+<td style="text-align: center"><img src="./circle_bottom.png" width="120"></td>
+</tr>
+</tbody>
+</table></li>
+</ul></li>
+</ul>
+
+<h3 id="toc_10"><a name="2-3"></a>2-3. Computational parameters</h3>
+
+<ul>
+<li><p><strong>Number of sample points and trials</strong></p>
+
+<ul>
+<li>Line 26: <q># Sample ...</q> : This line is read as a dummy character</li>
+<li>Line 27~29: <strong>nsmpb(iblk)</strong> (integer): Number of sample points on the surface of each block from Block 1 to Block <strong>nblk</strong>. Use one line for one block. </li>
+<li>Line 30: <q># Number of ...</q> : This line is read as a dummy character</li>
+<li>Line 31: <strong>ntry</strong> (integer): Number of trial. Total number of sample points on Block <strong>iblk</strong> is given by <strong>(ntry)*(nsmpb(iblk))</strong> </li>
+<li>Line 32: <strong>iout</strong> (integer): Interval of trial steps for outputting intermediate results. </li>
+</ul></li>
+</ul>
+
+<h3 id="toc_11"><a name="2-4"></a>2-4. Freestream conditions</h3>
+
+<ul>
+<li><p><strong>Angle-of-attack, Mach number and specific heat ratio</strong></p>
+
+<ul>
+<li>Line 33: <q># Angle ...</q> : This line is read as a dummy character</li>
+<li>Line 34: <strong>alp_deg</strong> (real(8)): Pitch angle of attack in degree.</li>
+<li>Line 35: <strong>bet_deg</strong> (real(8)): Yaw angle of attack in degree.</li>
+<li>Line 36: <q># Freestream ...</q> : This line is read as a dummy character</li>
+<li>Line 37: <strong>amach</strong> (real(8))): Mach number of the freestream. This parameter is used to calculate aerodynamics by the modified Newtonian theory. </li>
+<li>Line 38: <strong>gam</strong> (real(8))): Specific heat ratio of the gas of the freestream. This parameter is used to calculate aerodynamics by the modified Newtonian theory. </li>
+</ul></li>
+</ul>
+
+<p><a href="#contents">Back to Contents</a></p>
+
+<h2 id="toc_12"><a name="Outputs"></a> 3. Outputs</h2>
+
+<h3 id="toc_13"><a name="3-1"></a>3-1. Typical outputs on the console</h3>
+
+<div><pre class="line-numbers"><code class="language-none"> input: number of blocks
+           3
+ input: block numnber
+           1
+ input: shapes of blocks
+ sphere
+ input: position of blocks
+ nose
+ input: Neighboring block numbers
+           0           2
+ input: radius of spherer, [m]
+   1.0000000000000000
+ input: block numnber
+           2
+ input: shapes of blocks
+ cone
+ input: position of blocks
+ fore
+ input: Neighboring block numbers
+           1           3
+ input: base radius of cone, [m]
+   1.0000000000000000
+ input: Half angle of cone, [deg]
+   45.000000000000000
+ input: block numnber
+           3
+ input: shapes of blocks
+ circle
+ input: position of blocks
+ base
+ input: Neighboring block numbers
+           2           0
+ input: radius, [m]
+   1.0000000000000000
+
+  ================================
+  Block #  Shape       Position
+  -------- ----------  ----------
+     1       sphere        nose
+     2         cone        fore
+     3       circle        base
+  ================================
+
+  ========================================================================================
+  SUMMARY OF GEOMETRIES
+  ========================================================================================
+   Block #  Shape         Position      R [m]          angle[deg]   h [m]         x0 [m]
+   ------- ----------  ----------   ------------  ------------  ------------  ------------
+     1       sphere        nose       1.000000      0.000000      0.000000      1.000000
+     2         cone        fore       1.000000     45.000000      1.000000     -0.414214
+     3       circle        base       1.000000      0.000000      0.000000      0.585786
+  ==========================================================================================================
+   Block #  Param1 min    Param1 max    max - min     Param2 min    Param2 max    max - min     Area
+  -------- ------------  ------------  ------------  ------------  ------------  ------------  ------------
+     1      0.00000000    6.28318531    6.28318531   -1.57079633   -0.78539816    0.78539816    4.93480220
+     2      0.70710678    1.00000000    0.29289322    0.00000000    6.28318531    6.28318531    1.84030237
+     3      0.00000000    1.00000000    1.00000000    0.00000000    6.28318531    6.28318531    6.28318531
+  ======================================================================================================================================
+   Block #    x min          x max         x len        y min          y max         y len        z min          z max         z len
+  -------- ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+     1      0.00000000    0.29289322    0.29289322   -0.70710678    0.70710678    1.41421356   -0.70710678    0.70710678    1.41421356
+     2      0.29289322    0.58578644    0.29289322   -1.00000000    1.00000000    2.00000000   -1.00000000    1.00000000    2.00000000
+     3      0.58578644    0.58578644    0.00000000   -1.00000000    1.00000000    2.00000000   -1.00000000    1.00000000    2.00000000
+  -------- ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+   Total    0.00000000    0.58578644    0.58578644   -1.00000000    1.00000000    2.00000000   -1.00000000    1.00000000    2.00000000
+  ======================================================================================================================================
+
+   Reference area:   3.1415926500000002      [Deg]
+   Reference length:   1.0000000000000000      [Deg]
+  ====================================
+
+  ================================================
+   Free stream conditions
+  ------------------------------------------------
+   Mach number, M:   10.000000000000000
+   Specific heat ratio:   1.3999999999999999
+   Maxumum pressure coef, Cp0:   1.8316709773875366
+   Pitch angle:   0.0000000000000000      [Deg]
+   Yaw angle:   0.0000000000000000      [Deg]
+  ================================================
+   Computation conditions
+  ------------------------------------------------
+   Number of sample points:
+      Block #           1 :        5000 /trial
+      Block #           2 :        5000 /trial
+      Block #           3 :        1000 /trial
+   Number of trial test:         1000
+   Interval for output:          10
+  ================================================
+
+
+
+  ************************************************  &lt;&lt; Iteration start &gt;&gt;  ***********************************************
+#  Trial                   Local step values                                      Cumulative average
+  ---------- ------------------------------------------------------  ------------------------------------------------------
+#  number           ivisible       CD           CLy           CLz           ivisible       CD           CLy           CLz
+  ---------- ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+          10         10000    1.25147185   -0.00991070    0.01119672        100000    1.24976248    0.00139312    0.00501194
+          20         10000    1.24491842    0.00577336    0.01068176        200000    1.24999476    0.00139914    0.00382997
+          30         10000    1.25414732   -0.00847324    0.00611984        300000    1.25030451    0.00034396    0.00183712
+          40         10000    1.25290478   -0.00215000   -0.00119800        400000    1.25025153    0.00021929    0.00164828
+          50         10000    1.24432608    0.00906275   -0.00861712        500000    1.25016623    0.00120797    0.00185455
+...
+... Skip lines
+...
+         950         10000    1.25318867    0.00764746    0.00040978       9500000    1.24986042   -0.00012443    0.00049939
+         960         10000    1.24651088   -0.00420243   -0.00798521       9600000    1.24986180   -0.00015018    0.00051028
+         970         10000    1.24989361    0.01649202    0.02228083       9700000    1.24986268   -0.00010862    0.00053379
+         980         10000    1.25865271   -0.00290644   -0.01066874       9800000    1.24988087   -0.00009274    0.00051064
+         990         10000    1.24897690   -0.01017070   -0.00642469       9900000    1.24988224   -0.00010883    0.00048966
+        1000         10000    1.24516336    0.00654054    0.00289354      10000000    1.24986826   -0.00007591    0.00047082
+  ***********************************************  &lt;&lt; End of iteration &gt;&gt;  ***********************************************
+
+
+
+
+  ==================================================================================================================
+  SUMMARY
+  ==================================================================================================================
+  Aerodynamic coefficients of each blocks
+  ------------------------------------------------------------------------------------------------------------------
+  Block #    Shape     CD_av         CLy_av        CLz_av        L/D           CA_av         CNy_av        CNz_av
+  ------- ---------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+     1       sphere    0.74988118    0.00011678    0.00029441    0.00801141    0.74988118    0.00011678    0.00029441
+     2         cone    0.49998708   -0.00019269    0.00017641    0.01252141    0.49998708   -0.00019269    0.00017641
+     3       circle    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000
+  -----------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+  Total                1.24986826   -0.00007591    0.00047082    0.00038156    1.24986826   -0.00007591    0.00047082
+  Modified newtonia    1.14467371   -0.00006952    0.00043119    0.00038156    1.14467371   -0.00006952    0.00043119
+  ==================================================================================================================
+  Moment coefficients of each blocks
+  ------------------------------------------------------------------------------------------------------
+  Block #    Shape    Cm,0,x        Cm,0,y        Cm,0,z       Cm,cg,x       Cm,cg,y       Cm,cg,z
+  ------- ---------  ------------  ------------  ------------  ------------  ------------  ------------
+     1       sphere    0.00000000   -0.00029441    0.00011678    0.00000000   -0.00029441    0.00011678
+     2         cone    0.00000000   -0.00021027   -0.00030672    0.00000000   -0.00021027   -0.00030672
+     3       circle    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000
+  -----------------  ------------  ------------  ------------  ------------  ------------  ------------
+  Total                0.00000000   -0.00050467   -0.00018994    0.00000000   -0.00050467   -0.00018994
+  Modified newtonia    0.00000000   -0.00046220   -0.00017395    0.00000000   -0.00046220   -0.00017395
+  Cm,cg-Cm,0           0.00000000    0.00000000    0.00000000
+  Cm,cg-Cm,0 (MN)      0.00000000    0.00000000    0.00000000
+  ======================================================================================================
+  Visible area
+  ---------------------------------------------------------------------------
+  Block #        Visible     Projected      ivisible       nsample
+  --------    ----------    ----------    ----------    ----------
+     1        1.83982697    1.57044434     5000000 /       5000000
+     2        2.22138406    1.57075574     5000000 /       5000000
+     3        0.00000000    0.00000000           0 /       1000000
+  --------                  ----------    ----------    ----------
+  Total       4.06121103    3.14120008    10000000 /      11000000
+  --------                  ----------
+  Ref.                      3.14159265
+  ===========================================================================
+
+  ================================================
+   Computation info
+  ------------------------------------------------
+   CPU time :   4.2699618339538574      sec
+   Real time:           4 sec
+   Number of trials        1000 times
+   Total number of sample points    11000000 points
+  ================================================</code></pre></div>
+
+<ul>
+<li>Line 1~34: Displaying raw inputs</li>
+<li>Line 36~42: Summary geometry shape types and position types</li>
+<li>Line 46~51: Summary of input geometry parameters (Nose/base radius, half-angle, length, \(x\) coordinate of the base)</li>
+<li>Line 52~57: Summary of minimum and maximum values of variables \(\eta\) and \(\xi\) in the parametric domain. These values give the range of integration in each block.</li>
+<li>Line 58~65: Summary of minimum and maximum values of \(xyz\) coordinates of each block. </li>
+<li>Line 68~69: Displaying input reference length and area.</li>
+<li>Line 72~79: Displaying input freestream conditions. (Mach number and specific heat ratio)</li>
+<li>Line 80~88: Displaying input computational parameters.</li>
+<li><p>Line 93~112: Intermediate outputs of the results</p>
+
+<ul>
+<li>Column 1: Trial step number, <strong>itry</strong></li>
+<li>Column 2: Number of visible points within the (<strong>itry</strong>)th triral step.</li>
+<li>Column 3~5: Drag, lift and side force coefficients at the (<strong>itry</strong>)th trial step.</li>
+<li>Column 6: Cumulative number of visible points from the first trial step to the (<strong>itry</strong>)th trial step.</li>
+<li>Column 7~9: Cumulative average of drag, lift and side force coefficients over the (<strong>itry</strong>) steps of trials.</li>
+</ul></li>
+<li><p>Line 124~126:  Final results of aerodynamic coefficients for the whole geometry     </p>
+
+<ul>
+<li>Column 1: Block number</li>
+<li>Column 2: Shape type of the block</li>
+<li>Column 3~5: Drag, and lift force coefficients in the space coordinates for each block</li>
+<li>Column 6: Lift-to-drag ratio for each block</li>
+<li>Column 7~8: Axial, normal and side force coefficients in the body-fixed coordinates.</li>
+</ul></li>
+<li><p>Line 127: Final results of aerodynamic coefficients for the whole geometry</p></li>
+<li><p>Line 128: Aerodynamic coefficients form the Modified Newtonian theory</p></li>
+<li><p>Line 135~137:  Final results of moment coefficients for each block      </p>
+
+<ul>
+<li>Column 1: Block number</li>
+<li>Column 2: Shape type of the block</li>
+<li>Column 3~5: Rolling, pitching, and yawing moment coefficients about axis passing through the tip of the nose.</li>
+<li>Column 6~8: Rolling, pitching, and yawing moment coefficients about axis passing through the center of gravity.</li>
+</ul></li>
+<li><p>Line 138: Final results of moment coefficients for the whole geometry.</p></li>
+<li><p>Line 139: Moment coefficients form the Modified Newtonian theory</p></li>
+<li><p>Line 140: Difference of moment coefficients between the center of gravity and the origin</p></li>
+<li><p>Line 140: Difference of moment coefficients from the modified Newtonian theory</p></li>
+<li><p>Line 144~155: Summary of the visible points and area.</p></li>
+<li><p>Line 157~164: Summary of the computational time.</p></li>
+</ul>
+
+<h3 id="toc_14"><a name="3-2"></a>3-2. Output files</h3>
+
+<ul>
+<li><p>visible_points.dat: Position vectors of the visible sample points and local pressure coefficients</p>
+
+<ul>
+<li>Column 1~3: Position vector in the body-fixed coordinates of the visible sample points</li>
+<li>Column 4: Local pressure coefficient </li>
+<li>Column 5~7: Components of the pressure coefficient</li>
+</ul></li>
+<li><p>hidden_points.dat: Position vectors of the hidden sample points.</p>
+
+<ul>
+<li>Column 1~3:Position vector in the body-fixed coordinates of the invisible sample points</li>
+<li>Column 4: Local pressure coefficient (0 for all points)</li>
+<li>Column 5~7: Components of the pressure coefficient (0 for all points)</li>
+</ul></li>
+<li><p>convergence.dat: Log of the intermediate results (Same contents as Line 93~112 in the console outputs)</p></li>
+<li><p>NEW_aero_coefs.dat: Aerodynamic coefficients calculated by the original Newtonian theory</p>
+
+<ul>
+<li>Column 1: Mach number</li>
+<li>Column 2: Specific heat ratio</li>
+<li>Column 3: Pitch angle</li>
+<li>Column 4: Yaw angle</li>
+<li>Column 5: Drag force coefficient</li>
+<li>Column 6: \(y\) component of lift force coefficient</li>
+<li>Column 7: \(z\) component of lift force coefficient</li>
+<li>Column 8: Lift-to-drag ratio</li>
+<li>Column 9: Axial force coefficient</li>
+<li>Column 10: Normal force coefficient</li>
+<li>Column 11: Side force coefficient</li>
+<li>Column 12: Rolling moment coefficient about the axis passing through the center of gravity</li>
+<li>Column 13: Pitching moment coefficient about the axis passing through the center of gravity</li>
+<li>Column 14: Yawing moment coefficient about the axis passing through the center of gravity</li>
+<li>Column 15: Rolling moment coefficient about the axis passing through the tip of the nose</li>
+<li>Column 16: Pitching moment coefficient about the axis passing through the tip of the nose</li>
+<li>Column 17: Yawing moment coefficient about the axis passing through the tip of the nose</li>
+</ul></li>
+<li><p>MN_aero_coefs.dat: Aerodynamic coefficients calculated by the Modified Newtonian theory (Same contents of columns in the <q>NEW_aero_coefs.dat</q>)</p></li>
+</ul>
+
+<p><a href="#contents">Back to Contents</a></p>
+
+<h3 id="toc_15"><a name="3-3"></a>3-3. Visualize the sample points</h3>
+
+<p>The sample points used in the calculation in the first trial can be visualized by using GNUPLOT and so on. The following is an example of the script for GNUPLOT</p>
+
+<div><pre class="line-numbers"><code class="language-none">set view equal xyz
+set view 90,0, 1, 1
+unset border
+unset tics
+set ticslevel 0
+#
+set cbrange[0:1.5]
+set cbtics 0.4 offset -0.8,2 font &quot;Helvetica, 18&quot;
+set palette defined (0 &quot;green&quot;, 0.75 &quot;yellow&quot;, 1.5 &quot;red&quot;)
+#
+set cblabel &quot;Cp&quot; offset -3.0,11 font &quot;Helvetica, 20&quot; rotate by 0
+splot &quot;visible_points.dat&quot; using 1:2:3:4 w points pt 7 ps 0.3 lc palette notitle, &quot;hidden_points.dat&quot; using 1:2:3:4 w points pt 7 ps 0.3 lc &quot;grey&quot; notitle
+#</code></pre></div>
+
+<p>With this script, GNUPLOT displays the picture below. (Appearance can be different depending on the environment.)</p>
+
+<p><img src="./spherecone_points.png" width="40%"> </p>
+
+<p><a href="#contents">Back to Contents</a></p>
+
+<h2 id="toc_16"><a name="Examples"></a> 4. Example inputs and outputs</h2>
+
+<h3 id="toc_17"><a name="ex1"></a> Example 1: Sphere</h3>
+
+<p>Calculate aerodynamic coefficients for a sphere with a radius of 1 [m].</p>
+
+<p><img src="./sphere_dimension.png" width="40%"> </p>
+
+<p><strong>Input file</strong></p>
+
+<div><pre class="line-numbers"><code class="language-none">      1       Number of blocks
+# block 1
+  1           Block number
+  sphere      Shape
+  full        Position
+  0, 0        Connected blocks
+  1.d0        Nose radius [m]
+# Reference length and area
+   1.d0       Reference length [m]
+   3.14159265d0 Reference area [m2]
+# Reference point to calculate moments
+   0.d0 0.0d0  0.0d0    Center of gravity, [m]
+# Sample points on each block per one trial
+ 10000        No. of sample points for block 1 / trial
+# Number of trials and interval for the output
+  1000       Number of trials
+    10       Output interval
+# Angle of attack
+   0.0d0      Angle-of-attack, pitch [deg]
+   0.d0       Angle-of-attack, yaw [deg]
+# Freestream Mach number and specific heat ratio
+  10.0d0      Mach number
+   1.4d0      Specific heat ratio</code></pre></div>
+
+<p><strong>Outputs</strong></p>
+
+<p>NEW_aero_coefs.dat</p>
+
+<div><pre class="line-numbers"><code class="language-none">#===========================================================================
+#  Aerodynamic coefs by Newtoninan theory
+#===========================================================================
+# Mach    Gamma   Alpha   Beta    CD           CL,y         CL,z         L/D          CA           CN,y         CN,z         Cm,x cg      Cm,y cg      Cm,z cg      Cm,x O       Cm,y O       Cm,z O
+     10.00     1.40     0.00     0.00   1.00044574   0.00017648  -0.00032248  -0.00032233   1.00044574   0.00017648  -0.00032248  -0.00000000   0.00032248   0.00017648  -0.00000000   0.00032248   0.00017648</code></pre></div>
+
+<p>visible_points.dat and hidden_points.dat</p>
+
+<p><img src="./sphere_points.png" width="40%"> </p>
+
+<p><a href="#contents">Back to Contents</a></p>
+
+<h3 id="toc_18"><a name="ex2"></a> Example 2: Cone</h3>
+
+<p>Calculate aerodynamic coefficients for a cone with a base radius of 1 [m] and half-angle of 45 [deg].</p>
+
+<p><img src="./cone_dimension.png" width="40%"> </p>
+
+<p><strong>Input file</strong></p>
+
+<div><pre class="line-numbers"><code class="language-none">      1       Number of blocks
+# block 1
+  1           Block number
+  cone        Shape
+  fore        Position
+  0, 0        Connected blocks
+  1.0d0       Cone base radius [m]
+ 45.0d0       Cone half-angle [deg]
+# Reference length and area
+   1.d0       Reference length [m]
+   3.14159265d0 Reference area [m2]
+# Reference point to calculate moments
+  0.d0 0.d0  0.d0    Center of gravity, [m]
+# Sample points on each block per one trial
+ 10000        No. of sample points for block 1 / trial
+# Number of trial and interval for ouput
+  1000       Number of trials
+    10       Ouput interval
+# Angle of attack
+   0.d0      Angle-of-attack, pitch [deg]
+   0.d0       Angle-of-attack, yaw [deg]
+# Freestream Mach number and specific heat ratio
+  10.0d0      Mach number
+   1.4d0      Specific heat ratio</code></pre></div>
+
+<p><strong>Outputs</strong></p>
+
+<p>NEW_aero_coefs.dat</p>
+
+<div><pre class="line-numbers"><code class="language-none">#===========================================================================
+#  Aerodynamic coefs by Newtoninan theory
+#===========================================================================
+# Mach    Gamma   Alpha   Beta    CD           CL,y         CL,z         L/D          CA           CN,y         CN,z         Cm,x cg      Cm,y cg      Cm,z cg      Cm,x O       Cm,y O       Cm,z O
+     10.00     1.40     0.00     0.00   1.00027043   0.00020074  -0.00014558  -0.00014554   1.00027043   0.00020074  -0.00014558  -0.00000000   0.00031665   0.00030795  -0.00000000   0.00031665   0.00030795</code></pre></div>
+
+<p>visible_points.dat and hidden_points.dat</p>
+
+<p><img src="./cone_points.png" width="40%"> </p>
+
+<p><a href="#contents">Back to Contents</a></p>
+
+<h3 id="toc_19"><a name="ex3"></a> Example 3: Biconical object</h3>
+
+<p>Calculate aerodynamic coefficients for a biconical geometry.</p>
+
+<p><img src="./biconic_dimention.png" width="80%"> </p>
+
+<p><strong>Input file</strong></p>
+
+<div><pre class="line-numbers"><code class="language-none">      4       Number of blocks
+# block 1
+  1           Block number
+  sphere      Shape
+  nose        Position
+  0, 2        Connected blocks
+0.0254d0      Nose radius [m]
+# block 2
+  2           Block number
+  cone        Shape
+  fore        Position
+  1, 3        Connected blocks
+0.127579d0    Cone base radius [m], (x=0)
+ 17.0d0       Cone half-angle [deg]
+# block 3
+  3           Block number
+  cone        Shape
+  fore        Position
+  2, 4        Connected blocks
+0.2492d0      Cone base radius [m], (x=0)
+  8.0d0       Cone half-angle [deg]
+# block 4
+  4           Block number
+  circle      Shape
+  bottom      Position
+  3, 0        Connected blocks
+0.2492d0      Radius [m]
+# Reference length and area
+  1.22119478  Reference length [m]
+  0.194657d0  Reference area [m]
+# Reference point to calculate moments
+  1.22119478  0.d0 0.d0   Center of gravity
+# Sample points on each block per one trial
+  1000        Block 1
+ 50000        Block 2
+150000        Block 3
+  5000        Block 4
+# Number of trial and interval for averaging
+  100         Number of trials
+   10         Ouput interval
+# Angle of attack
+  10.d0    Angle-of-attack, pitch [deg]
+  20.d0    Angle-of-attack, yaw [deg]
+# Freestream Mach number and specific heat ratio
+   10.d0   Mach number
+   1.4d0   Specific heat ratio</code></pre></div>
+
+<p><strong>Outputs</strong></p>
+
+<p>NEW_aero_coefs.dat</p>
+
+<div><pre class="line-numbers"><code class="language-none">    #===========================================================================
+    #  Aerodynamic coefs by Newtoninan theory
+    #===========================================================================
+    # Mach    Gamma   Alpha   Beta    CD           CL,y         CL,z         L/D          CA           CN,y         CN,z         Cm,x cg      Cm,y cg      Cm,z cg      Cm,x O       Cm,y O       Cm,z O
+    10.00     1.40    10.00    20.00   0.47542649  -0.75477049   0.30228007   0.63580822   0.18997945  -0.71359675   0.34044173  -0.00000000   0.13627618   0.28563578  -0.00000000  -0.20416555  -0.42796098</code></pre></div>
+
+<p>visible_points.dat and hidden_points.dat</p>
+
+<p><img src="./biconic_points.png" width="50%"> </p>
+
+<p><a href="#contents">Back to Contents</a></p>
+
+<h3 id="toc_20"><a name="ex4"></a> Example 4: Apollo capsule</h3>
+
+<p>Calculate aerodynamic coefficients for Apollo command module geometry.</p>
+
+<p><img src="./Apollo_dimention.png" width="80%"> </p>
+
+<p><strong>Input file</strong></p>
+
+<div><pre class="line-numbers"><code class="language-none">      4       Number of blocks
+# block 1
+  1           Block number
+  sphere      Shape
+  nose        Position
+  0, 2        Connected blocks
+  4.6939d0    Nose radius [m]
+# block 2
+  2           Block number
+  shoulder    Shape
+  sph-cone    Position
+  1, 3        Connected blocks
+  0.1956d0    Shoulder arc radius [m]
+  1.8368d0    Radius of nose base [m]
+# block 3
+  3           Block number
+  cone        Shape
+  rear        Position
+  2, 4        Connected blocks
+  1.9933d0    Cone base radius [m], (x=0)
+ 33.0d0       Cone half-angle [deg]
+# block 4
+  4           Block number
+  sphere      Shape
+  tail        Position
+  3, 0        Connected blocks
+  0.2311d0    Radius [m]
+# Reference length and area
+   3.4306d0      Reference length [m]
+  12.01707457d0  Reference area [m2]
+# Reference point to calculate moments
+ 1.1455d0 0.0d0  0.1600d0    Center of gravity, [m]
+# Sample points on each block per one trial
+ 10000        No. of sample points for block 1 / trial
+  4000        No. of sample points for block 2 / trial
+ 19000        No. of sample points for block 3 / trial
+  1000        No. of sample points for block 3 / trial
+# Number of trial and interval for output
+  1000        Number of trials
+   10         Ouput interval
+# Angle of attack
+  -25.0d0     Angle-of-attack, pitch [deg]
+   0.d0       Angle-of-attack, yaw [deg]
+# Freestream Mach number and specific heat ratio
+  30.0d0         Mach number
+   1.4d0         Specific heat ratio</code></pre></div>
+
+<p><strong>Outputs</strong></p>
+
+<p>NEW_aero_coefs.dat</p>
+
+<div><pre class="line-numbers"><code class="language-none">#===========================================================================
+#  Aerodynamic coefs by Newtoninan theory
+#===========================================================================
+# Mach    Gamma   Alpha   Beta    CD           CL,y         CL,z         L/D          CA           CN,y         CN,z         Cm,x cg      Cm,y cg      Cm,z cg      Cm,x O       Cm,y O       Cm,z O
+     30.00     1.40   -25.00     0.00   1.20500274   0.00004079   0.46544388   0.38625960   1.28880845   0.00004079  -0.08742075   0.00000190  -0.01080942   0.00000913  -0.00000000   0.07848977   0.00002275</code></pre></div>
+
+<p>visible_points.dat and hidden_points.dat</p>
+
+<p><img src="./Apollo_points.png" width="40%"> </p>
+
+<p><a href="#contents">Back to Contents</a></p>
+
+
+
+<script type="text/javascript">
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(\w+)\b/i,t=0,n=_self.Prism={util:{encode:function(e){return e instanceof a?new a(e.type,n.util.encode(e.content),e.alias):"Array"===n.util.type(e)?e.map(n.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function(e){var t=n.util.type(e);switch(t){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=n.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return n.util.clone(e)})}return e}},languages:{extend:function(e,t){var a=n.util.clone(n.languages[e]);for(var r in t)a[r]=t[r];return a},insertBefore:function(e,t,a,r){r=r||n.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==t)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return n.languages.DFS(n.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,t,a,r){r=r||{};for(var l in e)e.hasOwnProperty(l)&&(t.call(e,l,e[l],a||l),"Object"!==n.util.type(e[l])||r[n.util.objId(e[l])]?"Array"!==n.util.type(e[l])||r[n.util.objId(e[l])]||(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,l,r)):(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,null,r)))}},plugins:{},highlightAll:function(e,t){var a={callback:t,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};n.hooks.run("before-highlightall",a);for(var r,l=a.elements||document.querySelectorAll(a.selector),i=0;r=l[i++];)n.highlightElement(r,e===!0,a.callback)},highlightElement:function(t,a,r){for(var l,i,o=t;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=n.languages[l]),t.className=t.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=t.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=t.textContent,u={element:t,language:l,grammar:i,code:s};if(!s||!i)return n.hooks.run("complete",u),void 0;if(n.hooks.run("before-highlight",u),a&&_self.Worker){var c=new Worker(n.filename);c.onmessage=function(e){u.highlightedCode=e.data,n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},c.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=n.highlight(u.code,u.grammar,u.language),n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(t),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},highlight:function(e,t,r){var l=n.tokenize(e,t);return a.stringify(n.util.encode(l),r)},tokenize:function(e,t){var a=n.Token,r=[e],l=t.rest;if(l){for(var i in l)t[i]=l[i];delete t.rest}e:for(var i in t)if(t.hasOwnProperty(i)&&t[i]){var o=t[i];o="Array"===n.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],c=u.inside,g=!!u.lookbehind,h=!!u.greedy,f=0,d=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var m=r[p];if(r.length>e.length)break e;if(!(m instanceof a)){u.lastIndex=0;var y=u.exec(m),v=1;if(!y&&h&&p!=r.length-1){var b=r[p+1].matchedStr||r[p+1],k=m+b;if(p<r.length-2&&(k+=r[p+2].matchedStr||r[p+2]),u.lastIndex=0,y=u.exec(k),!y)continue;var w=y.index+(g?y[1].length:0);if(w>=m.length)continue;var _=y.index+y[0].length,P=m.length+b.length;if(v=3,P>=_){if(r[p+1].greedy)continue;v=2,k=k.slice(0,P)}m=k}if(y){g&&(f=y[1].length);var w=y.index+f,y=y[0].slice(f),_=w+y.length,S=m.slice(0,w),O=m.slice(_),j=[p,v];S&&j.push(S);var A=new a(i,c?n.tokenize(y,c):y,d,y,h);j.push(A),O&&j.push(O),Array.prototype.splice.apply(r,j)}}}}}return r},hooks:{all:{},add:function(e,t){var a=n.hooks.all;a[e]=a[e]||[],a[e].push(t)},run:function(e,t){var a=n.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(t)}}},a=n.Token=function(e,t,n,a,r){this.type=e,this.content=t,this.alias=n,this.matchedStr=a||null,this.greedy=!!r};if(a.stringify=function(e,t,r){if("string"==typeof e)return e;if("Array"===n.util.type(e))return e.map(function(n){return a.stringify(n,t,e)}).join("");var l={type:e.type,content:a.stringify(e.content,t,r),tag:"span",classes:["token",e.type],attributes:{},language:t,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===n.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}n.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var t=JSON.parse(e.data),a=t.language,r=t.code,l=t.immediateClose;_self.postMessage(n.highlight(r,n.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var r=document.currentScript||[].slice.call(document.getElementsByTagName("script")).pop();return r&&(n.filename=r.src,document.addEventListener&&!r.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",n.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+</script>
+
+<script type="text/javascript">
+!function(){"undefined"!=typeof self&&self.Prism&&self.document&&Prism.hooks.add("complete",function(e){if(e.code){var t=e.element.parentNode,s=/\s*\bline-numbers\b\s*/;if(t&&/pre/i.test(t.nodeName)&&(s.test(t.className)||s.test(e.element.className))&&!e.element.querySelector(".line-numbers-rows")){s.test(e.element.className)&&(e.element.className=e.element.className.replace(s,"")),s.test(t.className)||(t.className+=" line-numbers");var n,a=e.code.match(/\n(?!$)/g),l=a?a.length+1:1,m=new Array(l+1);m=m.join("<span></span>"),n=document.createElement("span"),n.className="line-numbers-rows",n.innerHTML=m,t.hasAttribute("data-start")&&(t.style.counterReset="linenumber "+(parseInt(t.getAttribute("data-start"),10)-1)),e.element.appendChild(n)}}})}();
+</script>
+
+<script type="text/x-mathjax-config">
+(function () {
+
+MathJax.Hub.Config({
+	'showProcessingMessages': false,
+	'messageStyle': 'none'
+});
+
+if (typeof MathJaxListener !== 'undefined') {
+	MathJax.Hub.Register.StartupHook('End', function () {
+		MathJaxListener.invokeCallbackForKey_('End');
+	});
+}
+
+})();
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</body>
+
+</html>
