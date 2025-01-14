@@ -12,17 +12,17 @@ do
     esac
 done
 
-echo "$input_file"
-echo "$run_dir"
-echo "$param"
-echo "$start"
-echo "$end"
-echo "$num"
+echo "Input file: $input_file"
+echo "Current directory: $(pwd)"
+echo "Run directory: $run_dir"
+echo "Independent variable: $param, iterated from $start to $end with $num steps"
 
-cd "$run_dir"
-rm -r *
-cd ..
+# Search for run directory and if it doesn't exist, create it
+if [ ! -d "$run_dir" ]; then
+    mkdir "$run_dir"
+fi
 
+# Create input files in the run directory
 for ((i=1; i<="$num"; i++))
 do
     dir_name=input"$i"
@@ -30,21 +30,22 @@ do
     cp "$input_file" "$run_dir"/"$dir_name"/input"$i".flap
 done
 
-python3 modify_input.py --dir="$run_dir" --param="$param" --start="$start" --end="$end" --num="$num"
+# Run python script to modify the input files
+python modify_input.py --dir="$run_dir" --param="$param" --start="$start" --end="$end" --num="$num"
 
+# Run the MC-NEW executable on each input file
 for dir in "$run_dir"/*/ ; do
     echo "$dir"
-    cp MC-NEW "$dir"/
-    cd "$dir"
-    ./MC-NEW < $(basename "$dir").flap > out
-    cd ..
-    cd ..
+
+    ./MC-NEW < "$dir"/$(basename "$dir").flap > "$dir"/out
+
 done
 
-cd "$run_dir"
-touch all_aero_coefs.dat
-cd ..
-cp cmy_alpha.plot "$run_dir"/
-cp general.plot "$run_dir"/
+# Combine the outputs into a single data file
 
-python3 combine_data.py "$run_dir" "$param"
+cd "$run_dir"
+echo "Current directory: $(pwd)"
+touch aero_coefs.dat
+
+# Run the plotting and analysis scripts
+

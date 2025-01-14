@@ -49,3 +49,4 @@ for i, run in enumerate(natsorted(os.listdir(dir_name))):
     w.writelines(lines)
     w.close()
 
+print("Input files modified!\n")
