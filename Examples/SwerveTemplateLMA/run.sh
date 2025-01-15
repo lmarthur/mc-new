@@ -46,6 +46,13 @@ done
 cd "$run_dir"
 echo "Current directory: $(pwd)"
 touch aero_coefs.dat
+cd ..
+cp cmy_alpha.plot "$run_dir"/
+cp general.plot "$run_dir"/
+
+# Uncomment the following when it is fully implemented
+echo $(pwd)
+python combine_data.py "$(pwd)" "$param"
 
 # Run the plotting and analysis scripts
 

@@ -27,10 +27,10 @@
   1.75d0 0.d0  0.d0    Center of gravity, [m]
 # Sample points on each block per one trial
   100         No. of sample points for block 1 / trial
-  100000        No. of sample points for block 2 / trial
+  10000        No. of sample points for block 2 / trial
   100         No. of sample points for block 3 / trial
 # Number of trial and intervals for outputs
-  100         Number of trials
+  10         Number of trials
    10         Output interval
 # Angle of attack
    0.d0      Angle-of-attack, pitch [deg]
