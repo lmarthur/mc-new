@@ -5,6 +5,7 @@ import sys
 dir_name = sys.argv[1]
 param = sys.argv[2]
 allFile = dir_name+"/all_aero_coefs.dat"
+print("allFile: "+allFile)
 first = True
 
 print("Parameter is "+param)
@@ -12,7 +13,8 @@ print("Parameter is "+param)
 for run in natsorted(os.listdir(dir_name)):
     if "." in run:
         continue
-    
+
+    print("run: "+run)
     coeffFile = os.path.join(os.getcwd(), dir_name, run, "MN_aero_coefs.dat")
     
     f = open(coeffFile, 'r')

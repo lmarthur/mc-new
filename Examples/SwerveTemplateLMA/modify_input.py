@@ -15,7 +15,7 @@ param = args["param"]
 start = float(args["start"])
 end = int(args["end"])
 num = int(args["num"])
-
+print(param)
 step = (end - start) / num
 
 for i, run in enumerate(natsorted(os.listdir(dir_name))):
@@ -31,6 +31,7 @@ for i, run in enumerate(natsorted(os.listdir(dir_name))):
         if param in line:
             paramLine = line
             paramNum = linenum
+
             break
     f.close()
 

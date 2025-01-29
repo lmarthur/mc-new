@@ -36,8 +36,11 @@ python modify_input.py --dir="$run_dir" --param="$param" --start="$start" --end=
 # Run the MC-NEW executable on each input file
 for dir in "$run_dir"/*/ ; do
     echo "$dir"
-
-    ./MC-NEW < "$dir"/$(basename "$dir").flap > "$dir"/out
+    cp MC-NEW "$dir"/
+    cd "$dir"
+    # echo "Current directory: $(pwd)"
+    ./MC-NEW < $(basename "$dir").flap > out
+    cd ../..
 
 done
 
@@ -45,14 +48,14 @@ done
 
 cd "$run_dir"
 echo "Current directory: $(pwd)"
-touch aero_coefs.dat
+# touch aero_coefs.dat
 cd ..
-cp cmy_alpha.plot "$run_dir"/
-cp general.plot "$run_dir"/
+# cp cmy_alpha.plot "$run_dir"/
+# cp general.plot "$run_dir"/
 
 # Uncomment the following when it is fully implemented
-echo $(pwd)
-python combine_data.py "$(pwd)" "$param"
+# echo "Working directory: " $(pwd)
+python combine_data.py "$run_dir" "$param"
 
 # Run the plotting and analysis scripts
 

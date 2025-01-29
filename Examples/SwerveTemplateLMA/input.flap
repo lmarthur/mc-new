@@ -35,6 +35,6 @@
 # Angle of attack
    0.d0      Angle-of-attack, pitch [deg]
    0.d0       Angle-of-attack, yaw [deg]
-# Freestream Mach number and specific heat ratio 
-   8.0d0      Mach number
+# Freestream velocity and specific heat ratio 
+   8.0d0      mach number
    1.4d0      Specific heat ratio
