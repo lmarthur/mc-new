@@ -7,3 +7,7 @@
 # .mod 
 *.mod
 
+# Contents of run directories
+/Examples/*/runs
+/Examples/*/cog_runs
+/Examples/*/*_scan
