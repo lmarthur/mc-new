@@ -9,7 +9,7 @@ To run a simulation batch, run some version of the following command from the Ex
 ## TODO: 
 - [X] Write bash scripts for each geometry case 
 - [ ] Write documentation for github repo 
-- [ ] Generate SWERVE plots/write matplotlib scripts
+- [X] Generate SWERVE plots/write matplotlib scripts
 - [ ] Connect MC-NEW output to pytrajlib input
 - [ ] Test hypersonic flow convergence w/ empirical data/Newtonian approx
 - [ ] Look for analytic/empirical CAV moments
