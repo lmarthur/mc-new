@@ -8,10 +8,13 @@
 *.mod
 
 # Contents of run directories
-Examples/*/runs/input*
-Examples/*/cog_runs/input*
-Examples/*/aoa_scan
-Examples/*/mach_scan/input*
+#Examples/*/runs/input*
+#Examples/*/cog_runs/input*
+Examples/*/*_scan/input*
+/Users/lmarthur/Documents/Research/mc-new/Examples/SwerveTemplateLMA/aoa_scan
+
 
 # Data files
 *.dat
+
+# out
