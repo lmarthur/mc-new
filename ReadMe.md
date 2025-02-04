@@ -2,7 +2,7 @@
 The intended use of this repository is to calculate the aerodynamic parameters of a reentry vehicle with a given geometry, assuming Newtonian flow. To do this, the geometry must first be specified in the input file. 
 
 ## Manual
-To run a simulation batch, run some version of the following command from the Example subdirectory: 
+To run a simulation batch, run some version of the following command from the main project directory: 
 
 ```bash run.sh -i input.flap -d runs -p pitch -s -5.0 -e 5.0 -n 21```
 
@@ -24,6 +24,6 @@ To run a simulation batch, run some version of the following command from the Ex
 - [ ] Formulate 6-DOF guidance law?
 
 ## BUGS:
-- [ ] Running a scan over Mach number leaves the Mach number in the input files unchanged (problem w/ modify_input.py?)
+None
 
 
