@@ -8,6 +8,10 @@
 *.mod
 
 # Contents of run directories
-/Examples/*/runs
-/Examples/*/cog_runs
-/Examples/*/*_scan
+Examples/*/runs/input*
+Examples/*/cog_runs/input*
+Examples/*/aoa_scan
+Examples/*/mach_scan/input*
+
+# Data files
+*.dat
