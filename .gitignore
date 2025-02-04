@@ -11,10 +11,6 @@
 #Examples/*/runs/input*
 #Examples/*/cog_runs/input*
 Examples/*/*_scan/input*
-/Users/lmarthur/Documents/Research/mc-new/Examples/SwerveTemplateLMA/aoa_scan
 
-
-# Data files
-*.dat
 
 # out
